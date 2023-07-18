@@ -298,9 +298,9 @@ function OpenMenuSelect()
 	for key, value in pairs(myChars) do
 		elements[#elements + 1] = {
 			label = T.MainMenu.Name ..
-				value.firstname .. " " .. value.lastname .. " <br> " .. T.MainMenu.Money .. " " .. value.money,
+				value.firstname .. " " .. value.lastname,
 			value = "choose",
-			desc = imgPath:format("character_creator_appearance") .. " <br> " .. T.MainMenu.NameDesc,
+			desc = imgPath:format("character_creator_appearance") .. " <br> " .. T.MainMenu.NameDesc.." <br> " .. T.MainMenu.Money .. " " .. value.money,
 			char = value,
 			index = key, -- selected character index
 		}
